@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+     width: 90%;
+     height: 800px;
+     background-size: contain;
+     background-image: url("ab.jpg");
+      background-repeat: no-repeat;
+     font-family: "Lato", sans-serif;}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: PeachPuff ;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: LightBlue ;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: AliceBlue ;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+</style>
+<body>
+
+<h3>Find Me A Home NYC</h3>
+
+<ul class="tab">
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Home')">Home</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Adopt')">Adopt</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Re-homing')">Re-homing</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Pet Stores')">Pet Stores</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'About Us')">About Us</a></li>
+
+
+</ul>
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Welcome to Find Me A Home NYC.</p>
+  <p>Here is where civilians can help rescue/adopt a pet in need of a loving home.</p>
+  <p>Each contribution helps finding a home for each new pet who needs love and care.</p>
+</div>
+
+<div id="Adopt" class="tabcontent">
+  <h3>Adopt</h3>
+  <p>Adopting a pet is a wonderful thing that allows constant human interaction with an animal.</p>
+</div>
+
+<div id="Re-homing" class="tabcontent">
+  <h3>Re-homing</h3>
+  <p>Re-homing allows interaction within civilians to find a home for a pet in need.</p>
+</div>
+
+<div id="Pet Stores" class="tabcontent">
+  <h3>Pet Stores</h3>
+  <p>These services allows pet owners to supply their pets with their daily needs.</p>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Find Nearby Pet Stores</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by borough.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Borough</th>
+    <th style="width:40%;">Address</th>
+  </tr>
+  <tr>
+    <td>Bronx</td>
+    <td>Cross Bronx Pet Shop - 2064 Cross Bronx Expy, Bronx, NY 10472</td>
+  </tr>
+  <tr>
+    <td>Bronx</td>
+    <td>Crosby Pet Center - Inc 1626 Crosby Ave, Bronx, NY 10461</td>
+  </tr>
+  <tr>
+    <td>Bronx</td>
+    <td>Popcorn Pawz - 3702 Riverdale Ave, Bronx, NY 10463</td>
+  </tr>
+  <tr>
+    <td>Bronx</td>
+    <td>Petland Discounts - 150 E 188th St, Bronx, NY 10468</td>
+  </tr>
+  <tr>
+    <td>Brooklyn</td>
+    <td>PetSmart Brooklyn - 238 Atlantic Ave, Brooklyn, NY 11201</td>
+  </tr>
+  <tr>
+    <td>Brooklyn</td>
+    <td>Rocco and Jezebel for Pets - 89 Pineapple Walk, Brooklyn, NY 11201</td>
+  </tr>
+  <tr>
+    <td>Brooklyn</td>
+    <td>Vinny's Pet Shop - 451 Bay Ridge Ave, Brooklyn, NY 11220</td>
+  </tr>
+  <tr>
+    <td>Brooklyn</td>
+    <td>Puppy Paradise - 2084 Flatbush Ave, Brooklyn, NY 11234</td>
+  </tr>
+  <tr>
+    <td>Brooklyn</td>
+    <td>The Little Pet Store - 142 Havemeyer St, Brooklyn, NY 11211</td>
+  </tr>
+  <tr>
+    <td>Brooklyn</td>
+    <td>PS9 Pets - 169 N 9th St, Brooklyn, NY 11211</td>
+  </tr>
+  <tr>
+    <td>Manhattan</td>
+    <td>PetSmart - 632 Broadway, New York, NY 10012</td>
+  </tr>
+  <tr>
+    <td>Manhattan</td>
+    <td>Precious Pets - 895 1st Avenue, New York, NY 10022</td>
+  </tr>
+  <tr>
+    <td>Manhattan</td>
+    <td>Pet Central Seventh Avenue South - 29 7th Ave S, New York, NY 10014</td>
+  </tr>
+
+
+
+
+
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName('tr');
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName('td')[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = '';
+      } else {
+        tr[i].style.display = 'none';
+      }
+    }
+  }
+}
+</script>
+
+</div> 
+
+<div id="About Us" class="tabcontent">
+  <h3>About Us</h3>
+  <p>Reading here allows the user to learn more of the founders of FindMeAHomeNYC.</p>
+</div>
+
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+</body>
+</html>
+
+
+
+
+
+
+
+
+
